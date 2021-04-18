@@ -97,7 +97,7 @@ ul li a{
         
         width: 100vw;
         height: 100vh;
-        background-color: rgb(14, 0, 14);
+        background-color: rgb(0, 0, 0);
         transition: 1s;
     }
     .links ul{
