@@ -79,7 +79,7 @@ ul li a{
     .hamburger-menu{
         display: block;
         position: fixed;
-        top: 2.2em;
+        top: 1.8em;
         right: 4em;
         width: 30px;
         height: 20px;
@@ -94,7 +94,7 @@ ul li a{
         position: fixed;
         top: 5em;
         left: -100%;
-        
+        padding-left: 0;
         width: 100vw;
         height: 100vh;
         background-color: rgb(32, 0, 32);
