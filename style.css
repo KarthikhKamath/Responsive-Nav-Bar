@@ -101,7 +101,10 @@ ul li a{
         transition: 1s;
     }
     .links ul{
-        padding-left: 0%;
+        
+            text-align: center;
+            align-items: center;
+            padding-left: 0
     }
     .change{
         left: 0;
