@@ -94,14 +94,13 @@ ul li a{
         position: fixed;
         top: 5em;
         left: -100%;
-        padding-left: 0;
+        
         width: 100vw;
         height: 100vh;
-        background-color: rgb(32, 0, 32);
+        background-color: rgb(14, 0, 14);
         transition: 1s;
     }
     .links ul{
-        
             text-align: center;
             align-items: center;
             padding-left: 0
