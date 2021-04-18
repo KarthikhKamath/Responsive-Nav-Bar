@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    list-style: none;
+    background-color: black;
+}
+
+ul li{
+    list-style: none;   
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 5em;
+}
+
+.ul{
+    display: flex;
+}
+
+ul li a{
+    padding: 0 2em;
+    color: white;
+    font-size: 1.05rem;
+}
+
+.logo a{
+    text-decoration: none;
+    font-size: 2em;
+    color: rgb(105, 183, 219);
+}
+.hamburger-menu{
+    position: fixed;
+    
+    right: 4em;
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: wheat; */
+    display: none;
+    transition: 1s;
+}
+.lines{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 5em;
+    transition: .5s;
+}
+
+.change .line-1{
+    transform: rotateZ(45deg) translateY( 6px) ;
+    /* transform-origin: center; */
+} 
+
+.change .line-3{
+    transform: rotateZ(-45deg)  translateY( -12.5px) translateX(6px);
+    /* transform-origin: center; */
+}
+
+.change .line-2{
+    opacity: 0;
+}
+
+
+
+
+@media (max-width:992px){
+    .hamburger-menu{
+        display: block;
+        position: fixed;
+        top: 2.2em;
+        right: 4em;
+        width: 30px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: 1s;
+
+    }
+    .links{
+        display: block;
+        position: fixed;
+        top: 5em;
+        left: -100%;
+        
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(32, 0, 32);
+        transition: 1s;
+    }
+    .change{
+        left: 0;
+    }
+    .links ul{
+        display: block;
+        text-align: center;
+
+    }
+    .links ul li {
+        padding: 2em ;
+    }
+}
+@media (max-width:949px){
+    .header{
+        padding-left: 1rem;
+        padding-right: 2px;
+    }
+    .hamburger-menu{
+        right: 1rem;
+    }
+}
